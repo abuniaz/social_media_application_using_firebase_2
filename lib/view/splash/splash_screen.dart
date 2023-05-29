@@ -25,13 +25,14 @@ class _SplashScreenState extends State<SplashScreen> {
             Padding(
               padding: EdgeInsets.symmetric(vertical: 20),
               child: Center(
-                  child: Text(
-                'Tech Brothers Media',
-                style: TextStyle(
-                    fontFamily: AppFonts.sfProDisplayBold,
-                    fontSize: 40,
-                    fontWeight: FontWeight.w700),
-              )),
+                child: Text(
+                  'Tech Brothers Media',
+                  style: TextStyle(
+                      fontFamily: AppFonts.sfProDisplayBold,
+                      fontSize: 40,
+                      fontWeight: FontWeight.w700),
+                ),
+              ),
             )
           ],
         ),
