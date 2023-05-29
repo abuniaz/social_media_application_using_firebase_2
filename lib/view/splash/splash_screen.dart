@@ -17,24 +17,25 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
-          child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: const [
-          Image(image: AssetImage('assets/images/logo.jpg')),
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 20),
-            child: Center(
-                child: Text(
-              'Tech Brothers Media',
-              style: TextStyle(
-                  fontFamily: AppFonts.sfProDisplayBold,
-                  fontSize: 40,
-                  fontWeight: FontWeight.w700),
-            )),
-          )
-        ],
-      )),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: const [
+            Image(image: AssetImage('assets/images/logo.jpg')),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 20),
+              child: Center(
+                  child: Text(
+                'Tech Brothers Media',
+                style: TextStyle(
+                    fontFamily: AppFonts.sfProDisplayBold,
+                    fontSize: 40,
+                    fontWeight: FontWeight.w700),
+              )),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
