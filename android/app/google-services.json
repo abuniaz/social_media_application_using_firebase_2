@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "898013767814",
+    "project_id": "social-media-using-firebase",
+    "storage_bucket": "social-media-using-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898013767814:android:3b3648efb18b6aa29a8907",
+        "android_client_info": {
+          "package_name": "com.example.chat_board"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdpXBYT1qRz-0oeZP3O8PVUewrlqRTEgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
