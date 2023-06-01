@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tech_media/res/component/round_button.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -10,6 +11,10 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(
+        children: [RoundButton(title: 'Login')],
+      ),
+    );
   }
 }
