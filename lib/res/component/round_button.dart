@@ -8,6 +8,7 @@ class RoundButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 50,
+      decoration: BoxDecoration(color: Colors.red),
       child: Text(title),
     );
   }
