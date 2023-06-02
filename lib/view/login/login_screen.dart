@@ -15,7 +15,12 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: [RoundButton(title: 'Login')],
+        children: [
+          RoundButton(
+            title: 'Login',
+            onPress: () {},
+          )
+        ],
       ),
     );
   }

@@ -1,14 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:tech_media/res/color.dart';
 
 class RoundButton extends StatelessWidget {
   final String title;
-  const RoundButton({super.key, required this.title});
+  final VoidCallback onPress;
+  final Color color, textColor;
+  const RoundButton(
+      {super.key,
+      required this.title,
+      required this.onPress,
+      this.color = AppColors.primaryColor,
+      this.textColor = AppColors.whiteColor});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 50,
-      decoration: BoxDecoration(color: Colors.red),
+      decoration:
+          BoxDecoration(color: color, borderRadius: BorderRadius.circular(40)),
       child: Center(
         child: Text(
           title,
