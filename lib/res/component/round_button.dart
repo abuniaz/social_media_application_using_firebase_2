@@ -9,7 +9,12 @@ class RoundButton extends StatelessWidget {
     return Container(
       height: 50,
       decoration: BoxDecoration(color: Colors.red),
-      child: Text(title),
+      child: Center(
+        child: Text(
+          title,
+          style: Theme.of(context).textTheme.headline2!.copyWith(fontSize: 16),
+        ),
+      ),
     );
   }
 }
