@@ -18,6 +18,7 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           RoundButton(
             title: 'Login',
+            loading: false,
             onPress: () {},
           )
         ],
