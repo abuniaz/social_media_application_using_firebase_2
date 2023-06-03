@@ -13,13 +13,15 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const LoginScreen());
 
       default:
-        return MaterialPageRoute(builder: (_) {
-          return Scaffold(
-            body: Center(
-              child: Text('No route defined for ${settings.name}'),
-            ),
-          );
-        });
+        return MaterialPageRoute(
+          builder: (_) {
+            return Scaffold(
+              body: Center(
+                child: Text('No route defined for ${settings.name}'),
+              ),
+            );
+          },
+        );
     }
   }
 }
