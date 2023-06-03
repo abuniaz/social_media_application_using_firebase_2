@@ -28,9 +28,10 @@ class _SplashScreenState extends State<SplashScreen> {
                 child: Text(
                   'Tech Brothers Media',
                   style: TextStyle(
-                      fontFamily: AppFonts.sfProDisplayBold,
-                      fontSize: 40,
-                      fontWeight: FontWeight.w700),
+                    fontFamily: AppFonts.sfProDisplayBold,
+                    fontSize: 40,
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
               ),
             )
