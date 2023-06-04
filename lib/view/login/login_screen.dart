@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tech_media/res/component/input_text_field.dart';
 import 'package:tech_media/res/component/round_button.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -9,6 +10,8 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  final emailController = TextEditingController();
+  final emailFocusNode = FocusNode();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,10 +19,17 @@ class _LoginScreenState extends State<LoginScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          TextFormField(
-            decoration: InputDecoration(hintText: 'Email'),
-          ),
-          SizedBox(
+          InputTextField(
+              myController: emailController,
+              focusNode: emailFocusNode,
+              onFieldSubmittedValue: (value) {},
+              onValidator: (value) {
+                return value.isEmpty ? 'enter email' : null;
+              },
+              keyBoardType: TextInputType.emailAddress,
+              hint: 'Email',
+              obscureText: false),
+          const SizedBox(
             height: 40,
           ),
           RoundButton(

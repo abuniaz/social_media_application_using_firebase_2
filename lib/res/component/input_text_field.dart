@@ -10,8 +10,8 @@ class InputTextField extends StatelessWidget {
       required this.keyBoardType,
       required this.hint,
       required this.obscureText,
-      required this.enable,
-      required this.autoFocus});
+      this.enable = true,
+      this.autoFocus = false});
 
   final TextEditingController myController;
   final FocusNode focusNode;
@@ -26,8 +26,12 @@ class InputTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: myController,
+      obscureText: obscureText,
       focusNode: focusNode,
       onFieldSubmitted: onFieldSubmittedValue,
+      validator: onValidator,
+      keyboardType: keyBoardType,
+      decoration: InputDecoration(),
     );
   }
 }
