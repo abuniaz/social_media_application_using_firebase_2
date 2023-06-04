@@ -16,6 +16,12 @@ class _LoginScreenState extends State<LoginScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          TextFormField(
+            decoration: InputDecoration(hintText: 'Email'),
+          ),
+          SizedBox(
+            height: 40,
+          ),
           RoundButton(
             title: 'Login',
             loading: false,
