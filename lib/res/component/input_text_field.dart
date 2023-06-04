@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tech_media/res/color.dart';
 
 class InputTextField extends StatelessWidget {
   const InputTextField(
@@ -31,7 +32,10 @@ class InputTextField extends StatelessWidget {
       onFieldSubmitted: onFieldSubmittedValue,
       validator: onValidator,
       keyboardType: keyBoardType,
-      decoration: InputDecoration(),
+      decoration: InputDecoration(
+          border: OutlineInputBorder(
+              borderSide: BorderSide(color: AppColors.textFieldDefaultFocus),
+              borderRadius: BorderRadius.all(Radius.circular(15)))),
     );
   }
 }
