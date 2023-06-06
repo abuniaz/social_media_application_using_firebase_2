@@ -26,6 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
               onValidator: (value) {
                 return value.isEmpty ? 'enter email' : null;
               },
+              enable: true,
               keyBoardType: TextInputType.emailAddress,
               hint: 'Email',
               obscureText: false),
