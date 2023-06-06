@@ -32,8 +32,15 @@ class InputTextField extends StatelessWidget {
       onFieldSubmitted: onFieldSubmittedValue,
       validator: onValidator,
       keyboardType: keyBoardType,
+      style: Theme.of(context).textTheme.bodyText2,
       decoration: InputDecoration(
-          border: OutlineInputBorder(
+          hintText: hint,
+          contentPadding: EdgeInsets.all(15),
+          hintStyle: Theme.of(context)
+              .textTheme
+              .bodyText2!
+              .copyWith(color: AppColors.primaryTextTextColor.withOpacity(0.8)),
+          border: const OutlineInputBorder(
               borderSide: BorderSide(color: AppColors.textFieldDefaultFocus),
               borderRadius: BorderRadius.all(Radius.circular(15)))),
     );
