@@ -34,19 +34,23 @@ class InputTextField extends StatelessWidget {
       keyboardType: keyBoardType,
       style: Theme.of(context).textTheme.bodyText2,
       decoration: InputDecoration(
-          hintText: hint,
-          enabled: true,
-          contentPadding: EdgeInsets.all(15),
-          hintStyle: Theme.of(context)
-              .textTheme
-              .bodyText2!
-              .copyWith(color: AppColors.primaryTextTextColor.withOpacity(0.8)),
-          border: const OutlineInputBorder(
-              borderSide: BorderSide(color: AppColors.textFieldDefaultFocus),
-              borderRadius: BorderRadius.all(Radius.circular(15))),
-          focusedBorder: const OutlineInputBorder(
-              borderSide: BorderSide(color: AppColors.textFieldDefaultFocus),
-              borderRadius: BorderRadius.all(Radius.circular(15)))),
+        hintText: hint,
+        enabled: true,
+        contentPadding: EdgeInsets.all(15),
+        hintStyle: Theme.of(context)
+            .textTheme
+            .bodyText2!
+            .copyWith(color: AppColors.primaryTextTextColor.withOpacity(0.8)),
+        border: const OutlineInputBorder(
+            borderSide: BorderSide(color: AppColors.textFieldDefaultFocus),
+            borderRadius: BorderRadius.all(Radius.circular(15))),
+        focusedBorder: const OutlineInputBorder(
+          borderSide: BorderSide(color: AppColors.textFieldDefaultFocus),
+          borderRadius: BorderRadius.all(
+            Radius.circular(15),
+          ),
+        ),
+      ),
     );
   }
 }
