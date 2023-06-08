@@ -22,9 +22,11 @@ class RoundButton extends StatelessWidget {
         height: 50,
         width: double.infinity,
         decoration: BoxDecoration(
-            color: color, borderRadius: BorderRadius.circular(40)),
+          color: color,
+          borderRadius: BorderRadius.circular(40),
+        ),
         child: loading
-            ? Center(
+            ? const Center(
                 child: CircularProgressIndicator(
                   color: Colors.white,
                 ),
@@ -32,10 +34,10 @@ class RoundButton extends StatelessWidget {
             : Center(
                 child: Text(
                   title,
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline2!
-                      .copyWith(fontSize: 16, color: textColor),
+                  style: Theme.of(context).textTheme.headline2!.copyWith(
+                        fontSize: 16,
+                        color: textColor,
+                      ),
                 ),
               ),
       ),
